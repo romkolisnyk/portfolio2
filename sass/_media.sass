@@ -1,0 +1,1273 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px)
+	@keyframes slideup
+		0%
+			opacity: 0
+			transform: translateY(170px)
+		100%
+			opacity: 1
+			transform: translateY(80px)
+	body
+		font-size: 16px
+		line-height: 26px
+		letter-spacing: 0.32px
+
+	h1,.main .main__content .main__title
+		font-size: 92px
+		line-height: 120px
+		letter-spacing: 2.76px
+
+	h2,.seo .seo__title,.seo-content .seo-content--left h1,.testimonials .testimonials__title
+		font-size: 60px
+		line-height: 82px
+		letter-spacing: 1.8px
+
+	h3,.seo-content .seo-content--left h2,.cta-third .cta__title
+		font-size: 50px
+		line-height: 66px
+		letter-spacing: 1.5px
+
+	h4, .seo-content .seo-content--left h3,.carousel .carousel__content.active .carousel__title,.cta-second .cta__container .cta__title
+		font-size: 46px
+		line-height: 60px
+		letter-spacing: 1.38px
+
+	h5, .seo-content .seo-content--left h4, .features .features__title
+		font-size: 30px
+		line-height: 42px
+		letter-spacing: 1.2px
+		
+	h6,.seo__subtitle,.seo-content .seo-content--left h5,.seo-block .seo-block__container .seo-block__title,.cta-first .cta__container .cta-first__title
+		font-size: 28px
+		line-height: 40px
+		letter-spacing: 1.12px
+	.container
+		max-width: 920px
+	.button-main
+		font-size: 16px
+		line-height: 20px
+		letter-spacing: 1.53px
+		padding: 17px 46px
+	.main .main__content
+		margin-top: -30px
+		max-width: 625px
+		.circle
+			max-width: 445px
+		.pen
+			max-width: 620px
+		.button-main
+			bottom: 70px
+			margin: 80px auto 0
+			&.button--big
+				padding: 22px 64px
+				border-radius: 34px
+				font-size: 18px
+
+	.features
+		padding: 47px 0 80px
+		.features__img
+			&::before
+				width: 345px
+				height: 174px
+			.cup
+				width: 178px
+			.clock
+				width: 168px
+			.note
+				width: 252px
+	.cta-first .cta__container
+		.cta-first__title
+			margin: 20px 0
+			width: 340px
+		.button-main
+			margin: 0
+	.carousel
+		padding-bottom: 80px
+		padding-top: 40px
+		.carousel__item
+			height: 385px
+			img
+				max-width: 580px
+		.carousel__controls
+			font-size: 18px
+			padding: 13px 0
+			input[type=radio]:checked+label
+				font-size: 24px
+		.item-block__wrapper
+			max-width: 615px
+		.carousel__title
+			margin-top: 0
+	.testimonials
+		padding: 20px 2vw 90px
+		.testimonials__container
+			max-width: 660px
+		.testimonials__title
+			margin-bottom: -10px
+		.testimonials__subtitle
+			padding: 0 50px
+		.slider
+			margin-top: 45px
+			padding: 18px 50px
+	.cta-second
+		padding: 64px 0
+		.cta__container .cta__title
+			margin-bottom: 25px
+			margin-top: 0
+	.seo-block .seo-block__container
+		padding: 54px 0 90px
+		max-width: 640px
+		.seo-block__title
+			margin-top: 25px
+		.seo-block__content
+			font-size: 14px
+			line-height: 24px
+			letter-spacing: 0.28px
+	.cta-third
+		padding: 46px 0
+		&::before
+			width: 415px
+			height: 415px
+			border: 70px solid #f6e7cc
+		.cta__container
+			max-width: 550px
+		.cta__title
+			margin-top: 20px
+	.footer .footer__container
+		padding: 43px 55px
+		.footer__column.right
+			width: 320px
+
+	.hiw
+		.hiw__container
+			padding-bottom: 15px
+		.hiw__title
+			margin-bottom: 15px
+			margin-top: 25px
+		.hiw__image
+			max-height: 196px
+			.list
+				width: 203px
+			.play
+				width: 138px
+			.star
+				width: 128px
+			&::before
+				width: 241px
+			img
+				margin-bottom: 30px
+		.hiw__items
+			.item__title
+				margin-bottom: 43px
+				margin-top: 30px
+	.faq
+		.faq__container
+			max-width: 870px
+			padding: 50px 55px 80px
+		.faq__title
+			margin: 20px 0 55px
+		.faq__item
+			.faq__title-container
+				padding: 25px 70px 25px 35px
+			.item__title
+				font-size: 20px
+			.item__content
+				padding-right: 8%
+	.icon-slide
+		width: 80px
+
+	.contacts
+		.contacts__container
+			max-width: 1025px
+			padding: 55px 30px 75px
+		.contacts__title
+			margin-top: 30px
+		.contacts--right
+			padding: 25px 45px
+			width: 537px
+			.top input::placeholder
+				transform: translateY(-1px)
+	.footer .footer__container .subscribe input::placeholder
+		transform: translateY(-1px)
+
+	.pricing
+		.pricing__container
+			max-width: 1125px
+			padding: 60px 40px 100px
+		.pricing__title
+			margin-bottom: 40px
+			margin-top: 25px
+		.pricing__items
+			.pricing__item
+				padding: 30px 46px
+				max-width: 320px
+			.list__item
+				font-size: 16px
+				line-height: 30px
+			.item__title
+				margin-bottom: 21px
+			.price
+				margin-bottom: 0
+				span
+					margin: 0 15px
+			.button-main
+				margin: 17px
+				font-size: 14px
+	.advantages
+		.advantages__container
+			padding: 70px 40px 20px 40px
+		.advantages__item
+			max-width: 405px
+			padding-bottom: 40px
+			.item__title
+				font-size: 24px
+	.statistics
+		.statistics__container
+			padding: 73px 40px 53px
+			max-width: 1255px
+		.statistics__items
+			.item__title
+				font-size: 24px
+				line-height: 32px
+				margin-top: 35px
+				margin-bottom: 0
+			.statistics__item
+				max-width: 220px
+	.seo
+		.seo__container
+			max-width: 980px
+			padding: 96px 40px 120px
+		.seo__column--left
+			max-width: 440px
+			margin-top: 35px
+			.button-main,
+			.button-secondary--violet
+				font-size: 13px
+				padding: 13px 37px
+		h2,.seo__title
+			line-height: 70px
+		h6,.seo__subtitle
+			font-size: 18px
+			line-height: 28px
+			margin-bottom: 50px
+		.seo__column--right
+			.circle
+				width: 320px
+			.pen
+				width: 410px
+				height: 410px
+	.seo-content
+		.seo-content__container
+			padding: 80px 10px
+		.seo-content--left
+			h1
+				line-height: 70px
+			h2
+				line-height: 66px
+			p
+				font-size: 14px
+				line-height: 24px
+		.seo-content--right
+			width: 380px
+			.block-title h5
+				font-size: 30px
+				padding: 21px 115px
+			h6
+				font-size: 20px
+			.items
+				padding: 10px 50px 60px
+				.item__content
+					margin-top: 25px
+					padding-left: 40px
+			.bottom-block
+				.button-main
+					font-size: 13px
+					padding: 11px 33px
+		
+	.about
+		.about__title
+			margin-top: 20px
+		.about__subtitle
+			margin-top: 20px
+			font-size: 18px
+		.about__slider
+			margin-top: 60px
+			.about__image
+				transform: scale(.83)
+				&.second
+					width: 218px
+					margin-right: -19px
+					margin-left: -19px
+			.about__content
+				max-width: 370px
+				left: 55%
+				.slider__title::before
+					left: -85%
+					
+
+	.error-page .error-page__container
+		background-size: 82%
+		.error-page__text
+			font-size: 18px
+
+
+@media only screen and (min-width : 1230px) and (max-width : 1380px) and (min-height: 680px) and (max-height: 800px)
+	.about .about__slider .slider__item.active .about__image
+		top: -68px
+
+@media only screen and (min-width : 1200px) and (max-width : 1300px)
+	.advantages .advantages__items
+		padding: 0 40px
+
+@media only screen and (min-width : 1100px) and (max-width : 1290px) and (min-height: 1000px) and (max-height: 1030px)
+	.main .main__content .button-main
+		bottom: 150px
+	.about .about__slider
+		margin-top: 160px
+
+@media only screen and (min-width : 1000px) and (max-width : 1100px) and (min-height: 700px) and (max-height: 800px)
+	.about .about__slider .slider__item.active .about__image
+		top: -38px
+// /* Medium Devices, Desktops */
+@media only screen and (max-width : 1140px)
+	.pricing
+		background: #f5f5f5 url("../img/bg/pricing-768.png") no-repeat
+		background-position: bottom
+		.pricing__container
+			padding: 60px 40px 28px
+		.pricing__items
+			.pricing__item
+				max-width: 477px
+				width: 477px
+				padding: 85px 70px 70px
+				opacity: 0
+				margin-top: 10px
+				&.slick-active
+					opacity: 1
+			.item__title
+				font-size: 38px
+			.item__title::before
+				bottom: -40px
+			.price
+				margin-top: 55px
+			.list__item
+				font-size: 18px
+				line-height: 34px
+			.item__list
+				margin-top: 20px
+			.button-main
+				margin: 29px
+				font-size: 16px
+				padding: 16px 41px
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.header .menu
+		padding-left: 0
+		.menu--left
+			display: none
+		.toggle_menu
+			display: block
+	.mobile-menu
+		.menu
+			display: flex
+
+	.main
+		.container
+			max-width: 650px
+		.main__content
+			margin-top: -150px
+			.button-main.button--big
+				padding: 24px 62px
+				right: 0
+				left: 0
+	.features
+		padding: 85px 0 70px
+		.features__img
+			.cup
+				width: 142px
+			.clock
+				width: 134px
+			.note
+				width: 202px
+			&::before
+				width: 275px
+		.features__content
+			width: 376px
+			padding: 42px 26px
+		.features__item
+			margin-top: 0
+		.button-main
+			margin-right: 0
+	.cta-first
+		background-size: 145%
+		.button-main
+			margin-right: 0
+		.cta__container
+			max-width: 600px
+			justify-content: space-between
+	.carousel
+		padding-top: 85px
+		.carousel__text
+			padding: 0 30px
+		.carousel__title
+			margin-top: 15px
+	.testimonials
+		padding-bottom: 114px
+		.testimonials__container
+			max-width: 695px
+		.testimonials__subtitle
+			font-size: 18px
+			line-height: 28px
+			padding: 5px 100px 0
+		.slider
+			width: 80%
+			margin: 60px auto 70px
+			padding: 10px 65px
+			.slider__author
+				font-size: 20px
+				margin-top: -3px
+		.map
+			margin-top: 0
+	.cta-second
+		background: #f9f9f9 url(../img/bg/cta-bg-2-mobile.png) no-repeat center
+		background-size: 95%
+		padding: 53px 0
+		.cta__container .cta__title
+			margin-bottom: 30px
+	.cta-third
+		background-image: url(../img/bg/cta-bg-3-mobile.png)
+		background-size: 95%
+		.cta__title
+			margin-top: 28px
+	.seo-block .seo-block__container
+		padding-top: 88px
+	.footer .footer__container
+		padding: 50px 80px 25px
+		.footer__column.right
+			width: 296px
+		.footer__info
+			margin-top: 35px
+		.left
+			order: 1
+		.middle
+			order: 3
+			margin-top: 25px
+		.right
+			order: 2
+			width: 295px
+		.footer__link
+			padding-left: 0
+		.footer__contacts p
+			margin-bottom: 3px
+	.hiw
+		.hiw__container
+			padding-bottom: 55px
+		.hiw__title
+			margin-bottom: 80px
+		.hiw__items
+			justify-content: center
+			.hiw__item
+				width: 400px
+				max-width: 500px
+				padding: 30px 65px
+	.faq
+		.faq__container
+			padding: 50px 25px 115px
+		.faq__title
+			margin-top: 30px
+
+	.contacts
+		.contacts__container
+			padding: 60px 60px 80px
+		.contacts--left .contacts__item
+			margin-bottom: 40px
+			.item__img
+				margin: 0
+				margin-right: 20px
+			&.mail .item__content
+				margin-top: 0
+		.contacts__content
+			justify-content: center
+		.contacts--right,
+		.contacts--left
+			flex-grow: 1
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+		.contacts--right
+			flex-direction: column
+			padding: 80px 100px 96px
+			.item__title
+				margin-bottom: 10px
+			.button-main
+				margin-top: 40px
+
+	.advantages
+		.advantages__container
+			padding: 85px 15px 65px 15px
+		.advantages__item
+			width: 320px
+			max-width: 350px
+			.item__title
+				font-size: 20px
+				line-height: 32px
+			.item__image
+				margin-right: 20px
+		.advantages__item
+			padding-bottom: 20px
+	.seo
+		.seo__container
+			padding: 88px 56px 92px
+		h2,.seo__title
+			font-size: 50px
+			line-height: 62px
+		.seo__column--right
+			.circle
+				width: 210px
+			.pen
+				width: 250px
+				height: 250px
+		.seo__column--left
+			max-width: 345px
+			margin-top: 13px
+	.seo-content
+		.seo-content__container
+			padding: 50px 25px 65px
+		.seo-content--left
+			order: 2
+			padding: 0 40px
+			.seo-text p
+				font-size: 14px
+				line-height: 24px
+		.seo-content--right
+			margin-bottom: 80px
+			order: 1
+			.block-title h5
+				padding: 39px 45px
+			p
+				font-size: 14px
+				line-height: 24px
+			.items
+				padding: 20px 60px 60px
+				.item__content
+					padding-left: 60px
+			.bottom-block
+				padding-bottom: 30px
+		h2
+			letter-spacing: 2px
+	.about
+		min-height: unset
+		.about__container
+			padding: 67px 67px 108px
+			height: auto
+		.about__slider
+			margin: auto
+			.slick-prev
+				left: -50px
+				top: 20px
+			.slick-next
+				right: -50px
+				top: 33px
+			.about__image
+				display: none
+			.about__content
+				position: relative
+				left: 0
+				margin-top: 0
+				text-align: center
+				.slider__title::before
+					content: none
+			.slider__item.active
+				.about__content
+					left: 0
+					opacity: 0
+				.about__image
+					display: none
+			.slider__item.slick-active,
+			.slider__item.slick-current
+				.about__content
+					opacity: 1
+		.about__images-mobile
+			display: flex
+			transform: scale(.83)
+			margin-bottom: 245px
+			margin-top: 50px
+	.statistics
+		.statistics__items
+			.statistics__item
+				max-width: 235px
+			.item__title
+				font-size: 24px
+				line-height: 32px
+				margin-top: 38px
+				margin-bottom: 0px
+		.statistics__container
+			max-width: 642px
+			padding: 80px 40px 70px
+	.error-page .error-page__container
+		padding: 317px 30px 30px
+		background-size: 90%
+		background-position-y: 30%
+		.error-page__text
+			margin-bottom: 40px
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.carousel .carousel__item
+		height: unset
+		img
+			max-width: 76%
+			&.hidden
+				transform: rotate(0)
+				position: relative
+	.cta-first .cta__container
+		padding-left: 20px
+		padding-right: 20px
+	.seo-block .seo-block__container
+		max-width: 84%
+	.seo-content .seo-content--left
+		width: 100%
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 660px)
+	.cta-first
+		.cta__container
+			justify-content: center
+			text-align: center
+			.button-main
+				margin: 10px
+	.features
+		.features__content
+			text-align: center
+		.features__title::before
+			left: 0
+			right: 0
+			margin: auto
+		.features__item
+			&.middle
+				.features__content
+					order: 2
+				.features__img
+					order: 1
+	.contacts .contacts--right
+		padding: 60px 50px
+		.contacts__controls
+			flex-wrap: wrap
+			justify-content: space-around
+	.advantages
+		.advantages__container
+			.advantages__item
+				width: 100%
+				max-width: unset
+	.seo
+		.seo__container
+			flex-direction: column
+		.seo__column--right
+			order: 1
+			.circle
+				width: 170px
+			.pen
+				width: 215px
+				height: 215px
+		.seo__column--left
+			order: 2
+			text-align: center
+			margin-top: 30px
+			max-width: 100%
+		h2,.seo__title,.seo-content .seo-content--left h1
+			font-size: 25px
+			line-height: 42px
+		h6,.seo__subtitle
+			font-size: 16px
+			line-height: 26px
+	.seo-content .seo-content--left .seo-cta
+		flex-direction: column
+		padding-bottom: 10px
+		position: relative
+		h6
+			font-size: 22px
+			line-height: 28px
+			text-align: center
+			&::before
+				display: none
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			margin: 0 auto
+			width: 100%
+			height: 100%
+			top: 0
+			background-image: url("../img/bg/circle-seo-banner.svg")
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center
+			z-index: -1
+	.pricing .pricing__items .slick-dots
+		width: 100%
+/* Small Devices, Tablets */
+@media only screen and (max-width : 580px)
+	.header .menu .menu--right li:not(:last-child)
+		display: none
+	.mobile-menu
+		padding: 0
+		.top-links
+			display: flex
+			.link
+				margin-left: 30px
+		.menu
+			transform: none
+			position: unset
+			top: 0
+			li
+				padding: 18px 0
+				width: 100%
+			.menu__link
+				font-size: 26px
+				line-height: 40px
+				letter-spacing: 0.24px
+	.main .main__content
+		.circle
+			max-width: 400px
+		.pen
+			max-width: 520px
+	.carousel .carousel__controls
+		max-width: 90%
+		margin: auto
+	.features
+		.features__img
+			img
+				margin-bottom: 35px
+			.cup
+				width: 114px
+			.clock
+				width: 107px
+			.note
+				width: 162px
+			&::before
+				width: 220px
+				height: 139px
+	.seo-block .seo-block__container
+		max-width: 85%
+	.footer .footer__container .footer__column.middle
+		column-count: 2
+	.seo-content
+		.seo-content__container
+			padding: 50px
+		.seo-content--right
+			margin: 0
+			margin-bottom: 60px
+			.items
+				padding-bottom: 0
+				.item
+					flex-direction: column
+					margin-bottom: 45px
+				.item__content
+					padding-left: 0
+					text-align: center
+		.seo-content--left
+			padding: 0
+			h2,.seo-content .seo-content--left h1
+				font-size: 28px
+				line-height: 42px
+				letter-spacing: 0.99px
+			h6,.seo-content .seo-content--left h5
+				font-size: 22px
+				line-height: 34px
+				letter-spacing: 0.78px
+	.pricing
+		.pricing__items .pricing__item
+			width: 370px
+			padding: 35px 40px
+	.cta-first .button-main
+		margin-left: 0
+	.error-page .error-page__container .error-page__title
+		margin-top: 53px
+@media only screen and (min-width : 660px) and (max-width : 730px)
+	.features
+		.features__item
+			flex-wrap: nowrap
+		.features__content
+			padding: 40px 20px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	@keyframes slideup
+		0%
+			opacity: 0
+			transform: translateY(100px)
+		100%
+			opacity: 1
+			transform: translateY(65px)
+	body
+		font-size: 14px
+		line-height: 24px
+		letter-spacing: 0.28px
+
+	h1,.main .main__content .main__title
+		font-size: 38px
+		line-height: 50px
+		letter-spacing: 1.14px
+
+	h2,.seo .seo__title,.seo-content .seo-content--left h1,.testimonials .testimonials__title
+		font-size: 28px
+		line-height: 42px
+		letter-spacing: 0.84px
+
+	h3,.seo-content .seo-content--left h2,.cta-third .cta__title
+		font-size: 26px
+		line-height: 38px
+		letter-spacing: 0.78px
+
+	h4, .seo-content .seo-content--left h3,.carousel .carousel__content.active .carousel__title,.cta-second .cta__container .cta__title
+		font-size: 24px
+		line-height: 38px
+		letter-spacing: 0.72px
+
+	h5, .seo-content .seo-content--left h4, .features .features__title
+		font-size: 24px
+		line-height: 30px
+		letter-spacing: 0.96px
+		
+	h6,.seo__subtitle, .seo-content .seo-content--left h5,.seo-block .seo-block__container .seo-block__title,.cta-first .cta__container .cta-first__title
+		font-size: 22px
+		line-height: 34px
+		letter-spacing: 0.88px
+	.button-main
+		font-size: 14px
+		padding: 14px 44px
+		letter-spacing: 1px
+	.main
+		min-height: 90vh
+		height: 95vh
+		.container
+			max-width: 300px
+		.main__content
+			margin-top: -90px
+			.circle
+				max-width: 67%
+			.pen
+				max-width: 93%
+			.button-main.button--big
+				padding: 17px 44px
+				font-size: 16px
+		.scroll img
+			height: 30px
+	.features
+		padding: 60px 0 0
+		.features__content
+			text-align: center
+			padding: 0 10px
+		.features__title::before
+			bottom: -22px
+		.features__text
+			margin-top: 40px
+		.features__item
+			margin-bottom: 35px
+	.cta__container
+		text-align: center
+	.cta-first
+		background: #fff url(../img/bg/cta-bg-1-mobile.png) no-repeat
+		background-size: 100%
+		.cta__container .cta-first__title
+			margin-bottom: 15px
+	.carousel
+		padding-bottom: 25px
+		padding-top: 25px
+		.carousel__controls
+			padding: 0 5px 5px
+			font-size: 14px
+			line-height: 62px
+			letter-spacing: 1px
+			input[type=radio]:checked+label
+				font-size: 18px
+		.carousel__item img
+			max-width: 83%
+		.carousel__text
+			padding: 0
+		.carousel__controls
+			max-width: 100%
+		.carousel__title
+			margin-top: 0
+	.testimonials
+		padding-bottom: 70px
+		.testimonials__title
+			margin-top: 24px
+		.testimonials__subtitle
+			padding: 0
+			font-size: 16px
+			letter-spacing: 0.2px
+			line-height: 24px
+		.slider
+			width: 100%
+			margin: 40px 0
+			padding: 4px 30px
+			opacity: 1
+			right: 0
+			.slider__author
+				font-size: 18px
+				margin-top: -1px
+		.slick-next
+			right: 22%
+			top: 116%
+		.slick-prev
+			left: 22%
+			top: 110%
+			margin-top: 5px
+		.map
+			display: none
+
+	.cta-second
+		background: #f9f9f9 url(../img/bg/cta-bg-2-mobile320.png) no-repeat center
+		padding: 35px 0
+		.cta__container .cta__title
+			max-width: 300px
+			margin-bottom: 20px
+	.seo-block .seo-block__container
+		padding: 40px 20px 40px
+		max-width: 100%
+		.seo-block__title
+			margin-top: 15px
+			margin-bottom: -5px
+	.cta-third
+		padding: 0
+		background-image: url(../img/bg/cta-bg-3-mobile320.png)
+		background-size: 91%
+		&::before
+			width: 253px
+			height: 253px
+			border: 50px solid #f6e7cc
+		.cta__title
+			margin-bottom: 30px
+			margin-top: 50px
+			max-width: 300px
+			transform: translateY(-10px)
+		.button-main
+			margin-top: 0
+			transform: translateY(-14px)
+	.footer
+		.footer__container
+			padding: 50px 20px
+			text-align: center
+			justify-content: center
+			.footer__logo
+				margin: auto
+			.left
+				margin-bottom: 45px
+			.footer__info
+				margin-top: 15px
+			.subscribe input
+				width: 100%
+				margin-bottom: 20px
+			.footer__column.middle
+				margin-top: 15px
+				column-count: 1
+		.copy
+			padding: 10px 0
+	.hiw
+		.hiw__container
+			padding-bottom: 25px
+		.hiw__title
+			margin-top: -4px
+			margin-bottom: 30px
+		.hiw__image
+			.list
+				width: 162px
+			.play
+				width: 110px
+			.star
+				width: 102px
+			&:before
+				width: 193px
+		.hiw__items
+			.hiw__item
+				padding: 20px 65px
+			.item__title
+				margin-bottom: 40px
+				margin-top: 28px
+	.faq
+		.faq__container
+			padding: 15px 25px 60px
+		.faq__title
+			margin-bottom: 30px
+		.faq__item
+			.item__title
+				font-size: 18px
+				line-height: 24px
+			.faq__title-container
+				padding: 11px 53px 11px 13px
+			.item__content
+				padding: 9px 5% 1px 13px
+	.icon-slide
+		width: 58px
+		.line
+			width: 23px
+	.contacts
+		.contacts__container
+			padding: 30px 20px 62px
+		.contacts--left .contacts__item
+			margin-bottom: 25px
+			.item__contact
+				font-size: 16px
+			&.mail
+				flex-wrap: nowrap
+				.item__contact
+					margin-bottom: 18px
+		.contacts--right
+			padding: 20px 25px
+			.contacts__controls
+				flex-direction: column
+				align-items: center
+				input[type=radio]+label
+					padding: 8px 0
+					&::before
+						width: 35px
+						height: 35px
+						border: 6px solid #dfd3e8
+					&:hover::before
+						border: 6px solid #826bb4			
+			.top
+				flex-wrap: wrap
+				input
+					width: 100%
+					margin: 6px 0
+			textarea
+				margin: 6px 0
+			.form-captcha
+				flex-wrap: wrap
+				text-align: center
+			.captcha
+				width: 100%
+				margin-right: 0
+				margin-bottom: 15px
+			#captcha
+				margin: auto
+			.button-main
+				margin-top: 25px
+	.pricing
+		background: #f5f5f5
+		.pricing__container
+			padding: 60px 20px 10px
+		.pricing__title
+			margin-top: 2px
+			margin-bottom: 15px
+		.pricing__items
+			.pricing__item
+				margin-top: 0
+				padding: 13px 20px
+				width: 300px
+			.slick-dots
+				padding: 0
+			.slick-dots li
+				&.slick-active a
+					font-size: 18px
+				a
+					font-size: 14px
+					letter-spacing: 1px
+			.item__title
+				font-size: 26px
+				&::before
+					bottom: -17px
+			.price
+				margin-top: 10px
+				font-size: 14px
+				span
+					font-size: 20px
+					margin: 0 10px
+			.item__list
+				margin-top: 10px
+			.list__item
+				font-size: 14px
+				line-height: 28px
+			.button-main
+				font-size: 14px
+				margin: 14px
+				padding: 10px 31px
+		.slick-dotted.slick-slider
+			margin-bottom: 0
+	.advantages
+		.advantages__container
+			padding: 40px 20px 50px 20px
+		.advantages__item
+			flex-direction: row
+			flex-wrap: wrap
+			padding-bottom: 0
+			padding-bottom: 2px
+			.item__image
+				margin-top: 10px
+				margin-bottom: 12px
+			.item__text
+				line-height: 24px
+	.seo
+		.seo__container
+			padding: 88px 15px 42px
+		.seo__column--right
+			.circle
+				width: 132px
+			.pen
+				width: 160px
+				height: 160px
+		h6,.seo__subtitle
+			margin-bottom: 40px
+			margin-top: 5px
+		.seo__column--left .button-main,
+		.seo__column--left .button-secondary--violet
+			padding: 12px 25px
+			margin: 8px
+
+	.seo-content
+		.seo-content__container
+			padding: 45px 20px
+		.seo-content--right
+			margin-bottom: 50px
+			width: 275px
+			h6
+				font-size: 18px
+				line-height: 26px
+			.block-title h5
+				padding: 15px 10px
+				font-size: 24px
+				line-height: 40px
+			.items
+				padding: 20px 30px 0
+				.item__img::before
+					width: 71px
+				.cup
+					width: 40px
+				.clock
+					width: 38px
+				.note
+					width: 57px
+				.item__content
+					margin-top: 15px
+			.bottom-block
+				padding: 45px 20px 30px
+		.seo-content--left .seo-cta
+			padding: 25px 10px 10px
+	.about
+		.about__container
+			padding: 67px 32px 36px
+		.about__title
+			margin-top: 0
+		.about__slider
+			.about__content
+				max-width: 280px
+			.slider__text
+				font-size: 13px
+				line-height: 23px
+				letter-spacing: 0.26px
+			.slick-prev
+				width: 33px
+				left: -15px
+				top: 12px
+			.slick-next
+				width: 33px
+				right: -15px
+				top: 30px
+		.about__subtitle
+			font-size: 16px
+		.about__images-mobile
+			transform: scale(.25)
+		.about__images-mobile
+			margin-bottom: 0
+			margin-top: -80px
+		.scroll
+			display: none
+	.statistics
+		.statistics__container
+			padding: 45px 40px 30px
+		.statistics__items
+			.statistics__item
+				padding: 23px
+			p
+				font-size: 16px
+	.error-page .error-page__container
+		padding: 160px 15px 30px
+		background-position-y: 25%
+		.error-page__text
+			font-size: 16px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.seo .seo__column--left .button-main, .seo .seo__column--left .button-secondary--violet
+		margin: 5px
+	.main
+		.main__content
+			.button-main.button--big
+				bottom: 7%
+	/**/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+	.cta-third::before
+		border: 74px solid #f6e7cc
+		width: 500px
+		height: 500px
+	.main
+		background-size: 120%
+		.container
+			height: 100vh
+		.main__content
+			margin-top: -150px
+			.pen,
+			.circle
+				top: 0
+				bottom: 0
+	.testimonials .map
+		height: 446px
+		margin-top: 0
+	.cta-second .cta__container .cta__title,
+	.cta-third .cta__title
+		width: 100%
+	.st0.active
+		fill: #FF6701
+	.about .about__slider
+		.about__image
+			&.first
+				height: 100%
+			&.second
+				height: 100%
+			&.third
+				height: 100%
+			&.forth
+				height: 100%
+			&.fifth
+				height: 100%
+			&.sixth
+				height: 100%
+		.active.slider__item .about__image.second
+			top: 50px
+	.hiw
+		.hiw__item
+			.hiw__content
+				width: 100%
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) and (max-width : 1440px)
+	.main .main__content
+		.circle
+			max-height: 445px
+		.pen
+			max-height: 620px
+	.footer .footer__container .subscribe input::placeholder
+		transform: translateY(0)
+@media all and (max-width : 1000px) and (-ms-high-contrast: none), (-ms-high-contrast: active)
+	.testimonials .map
+		height: 230px
+	
+@media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0)
+	.pricing .pricing__items .list-block
+		min-height: 258px
+	.main
+		.container
+			height: 100vh
+		.main__content
+			.pen,
+			.circle
+				top: 0
+				bottom: 0
+@media not all and (min-resolution:.001dpcm)
+	.footer .footer__container .subscribe input::placeholder
+		transform: translateY(2px)
+	.contacts .contacts--right
+		.top input::placeholder
+			transform: translateY(2px)
+		.captcha::placeholder
+			transform: translateY(2px)
